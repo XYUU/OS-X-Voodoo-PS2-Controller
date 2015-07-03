@@ -556,7 +556,7 @@
 		84167808161B55B2002C60E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = rehabman;
 			};
 			buildConfigurationList = 8416780B161B55B2002C60E6 /* Build configuration list for PBXProject "VoodooPS2Controller" */;
@@ -784,7 +784,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CURRENT_PROJECT_VERSION = 1.8.15;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -804,9 +803,10 @@
 				"LLVM_LTO[arch=x86_64]" = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MODULE_VERSION = 1.8.15;
+				ONLY_ACTIVE_ARCH = YES;
 				"OTHER_LDFLAGS[arch=x86_64]" = "-dead_strip";
 				PRODUCT_NAME = VoodooPS2Controller;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -814,7 +814,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CURRENT_PROJECT_VERSION = 1.8.15;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -830,7 +829,7 @@
 				MODULE_VERSION = 1.8.15;
 				"OTHER_LDFLAGS[arch=x86_64]" = "-dead_strip";
 				PRODUCT_NAME = VoodooPS2Controller;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
